@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class ExamSimulator {
+public class QuizSystem {
 
     static final int MAX_QUESTIONS = 100;
     static String[] questions = new String[MAX_QUESTIONS];
