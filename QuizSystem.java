@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class QuizSystem {
-
+    
     static final int MAX_QUESTIONS = 100;
     static String[] questions = new String[MAX_QUESTIONS];
     static String[][] options = new String[MAX_QUESTIONS][4];
@@ -78,7 +78,6 @@ public class QuizSystem {
                 System.out.println("Invalid input.");
             }
         }
-        sc.close();
     }
 
     public static void viewAllQuestions() {
@@ -122,7 +121,6 @@ public class QuizSystem {
         } catch (IOException e) {
             System.out.println("Error adding question: " + e.getMessage());
         }
-        sc.close();
     }
 
     public static void editQuestion() {
@@ -137,7 +135,6 @@ public class QuizSystem {
 
         if (qNum < 0 || qNum >= totalQuestions) {
             System.out.println("Invalid question number!");
-            sc.close();
             return;
         }
 
@@ -175,7 +172,6 @@ public class QuizSystem {
 
         saveAllQuestionsToFile();
         System.out.println("Question updated successfully.");
-        sc.close();
     }
 
     public static void deleteQuestion() {
@@ -190,7 +186,6 @@ public class QuizSystem {
 
         if (qNum < 0 || qNum >= totalQuestions) {
             System.out.println("Invalid question number!");
-            sc.close();
             return;
         }
 
@@ -215,7 +210,6 @@ public class QuizSystem {
         } else {
             System.out.println("Deletion cancelled.");
         }
-        sc.close();
     }
 
     public static void saveAllQuestionsToFile() {
@@ -327,7 +321,6 @@ public class QuizSystem {
         } catch (IOException e) {
             System.out.println("Could not save performance: " + e.getMessage());
         }
-        input.close();
     }
 
 

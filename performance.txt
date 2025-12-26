@@ -1,2 +1,4 @@
 User: Qahrahman, Score: 5/5, Time: 33 seconds
 User: Usman, Score: 5/5, Time: 3 minutes 5 seconds
+User: Jeffery, Score: 3/5, Time: 25 seconds
+User: Trump, Score: 3/5, Time: 12 seconds
